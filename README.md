@@ -16,9 +16,17 @@
 
 -2단계코드의실행스크린샷
 
+<img width="990" height="568" alt="스크린샷 2026-03-12 170919" src="https://github.com/user-attachments/assets/8ea2c85a-3e18-4851-95a8-221851f17529" />
+
+<img width="954" height="506" alt="image" src="https://github.com/user-attachments/assets/c4373549-b401-471b-987a-2bf016e55dcf" />
 
 -3단계코드의실행스크린샷
 
+<img width="535" height="264" alt="스크린샷 2026-03-12 171108" src="https://github.com/user-attachments/assets/ff8e5719-71fd-48dd-941a-4427c05d45f6" />
+
+버튼 축소 및 점수 증가
+
+<img width="335" height="127" alt="스크린샷 2026-03-12 171150" src="https://github.com/user-attachments/assets/a1a9be91-da95-43ac-aa03-53ad898d5cf8" />
 
 -4단계코드의실행스크린샷
 
