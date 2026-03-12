@@ -5,6 +5,7 @@ namespace CatchButton
     public partial class Btngame : Form
     {
         private Random random;
+        int score = 1000;
 
         public Btngame()
         {
@@ -24,7 +25,29 @@ namespace CatchButton
 
             run_btn.Location = new Point(newX, newY);
 
-            this.Text = $"버튼위치: ({newX}, {newY})";
+            this.Text = $"점수:({score}) |버튼위치: ({newX}, {newY})";
+        }
+
+        private void run_btn_MouseClick(object sender, MouseEventArgs e)
+        {
+
+            score += 100;
+            MessageBox.Show("버튼을 잡았습니다! +100점", "성공");
+
+            int newWidth = (int)(run_btn.Width * 0.9);
+            int newHeight = (int)(run_btn.Height * 0.9);
+
+            if (newWidth < 30) newWidth = 30;
+            if (newHeight < 20) newHeight = 20;
+
+            run_btn.Size = new Size(newWidth, newHeight);
+        }
+
+        private void Btngame_Click(object sender, EventArgs e)
+        {
+            score -= 50;
+            MessageBox.Show("버튼을 놓쳤습니다! -50점", "실패");
+            
         }
     }
 }

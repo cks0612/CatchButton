@@ -38,11 +38,12 @@
             run_btn.ForeColor = Color.Red;
             run_btn.Location = new Point(209, 156);
             run_btn.Name = "run_btn";
-            run_btn.Size = new Size(133, 54);
+            run_btn.Size = new Size(200, 60);
             run_btn.TabIndex = 0;
             run_btn.Text = "나를 잡아봐 ";
             run_btn.UseVisualStyleBackColor = false;
             run_btn.Click += button1_MouseEnter;
+            run_btn.MouseClick += run_btn_MouseClick;
             run_btn.MouseEnter += button1_MouseEnter;
             // 
             // Btngame
@@ -53,6 +54,7 @@
             Controls.Add(run_btn);
             Name = "Btngame";
             Text = "버튼찾기 게임";
+            Click += Btngame_Click;
             ResumeLayout(false);
         }
 
