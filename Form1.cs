@@ -41,12 +41,16 @@ namespace CatchButton
             if (newHeight < 20) newHeight = 20;
 
             run_btn.Size = new Size(newWidth, newHeight);
+
+            this.Text = $"점수:({score}) | 버튼위치: ({run_btn.Location.X}, {run_btn.Location.Y})";
         }
 
         private void Btngame_Click(object sender, EventArgs e)
         {
             score -= 50;
             MessageBox.Show("버튼을 놓쳤습니다! -50점", "실패");
+
+            this.Text = $"점수:({score}) | 버튼위치: ({run_btn.Location.X}, {run_btn.Location.Y})";
 
             if (score <= 0)
             {
