@@ -5,7 +5,7 @@ namespace CatchButton
     public partial class Btngame : Form
     {
         private Random random;
-        int score = 1000;
+        int score = 500;
 
         public Btngame()
         {
@@ -47,7 +47,27 @@ namespace CatchButton
         {
             score -= 50;
             MessageBox.Show("버튼을 놓쳤습니다! -50점", "실패");
-            
+
+            if (score <= 0)
+            {
+                var result = MessageBox.Show("게임 오버!\n다시 하시겠습니까?",
+                                             "Game Over",
+                                             MessageBoxButtons.YesNo,
+                                             MessageBoxIcon.Question);
+
+                if (result == DialogResult.Yes)
+                {
+  
+                    score = 500;
+                    run_btn.Size = new Size(200, 60);
+                    this.Text = $"점수:({score}) | 버튼위치: ({run_btn.Location.X}, {run_btn.Location.Y})";
+                }
+                else
+                {
+
+                    this.Close();
+                }
+            }
         }
     }
 }
