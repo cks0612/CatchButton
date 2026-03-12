@@ -30,4 +30,6 @@
 
 -4단계코드의실행스크린샷
 
+<img width="1002" height="567" alt="image" src="https://github.com/user-attachments/assets/ad9604f7-b0c6-4b8c-9ef4-6e89e9a8525c" />
+
 
